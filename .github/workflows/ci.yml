@@ -54,7 +54,13 @@ jobs:
         run: |
           docker compose up -d mysql redis --wait
       
-      
+      #- name: Exécuter les tests
+        #working-directory: src
+        #env:
+          #REDIS_HOST: localhost
+          #DB_HOST: localhost
+        #run: |
+          #python -m pytest
     
   deploy:
     runs-on: self-hosted

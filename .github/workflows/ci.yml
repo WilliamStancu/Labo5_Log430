@@ -71,8 +71,8 @@ jobs:
       - name: Checkout dépot
         uses: actions/checkout@v4
 
-      - name: Déploiement Docker
-        run: docker compose --profile full up -d --build --remove-orphans --wait
+      #- name: Déploiement Docker
+        #run: docker compose --profile full up -d --build --remove-orphans --wait
 
 
     
